@@ -74,7 +74,11 @@ body.rv-hidden .rv-chip, body.rv-hidden .rv-notes, body.rv-hidden .rv-slot { dis
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 1px solid var(--line); }
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--s4); min-height: 64px; }
-.brand { display: inline-flex; align-items: center; text-decoration: none; color: var(--navy-900); }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--navy-900); }
+.brand__mark { height: 40px; width: auto; display: block; }
+.brand--footer .brand__mark { background: #fff; border-radius: 3px; padding: 3px; box-sizing: content-box; }
+.about-logo { margin: 0 0 var(--s6); max-width: 360px; }
+.about-logo img { width: 100%; height: auto; display: block; }
 .brand__text { display: flex; flex-direction: column; line-height: 1; border-left: 3px solid var(--gold-500); padding-left: 10px; }
 .brand__line1 { font-weight: 800; font-size: 1.125rem; letter-spacing: .02em; color: var(--navy-900); }
 .brand__line2 { font-weight: 600; font-size: .5625rem; letter-spacing: .26em; color: var(--gold-700); margin-top: 4px; }
