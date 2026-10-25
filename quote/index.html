@@ -19,111 +19,57 @@
 <link rel="stylesheet" href="/assets/styles.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://liftrightequipment.com/#organization","name":"LiftRight Equipment","url":"https://liftrightequipment.com/","description":"Lifting Equipment Inspections. Clear inspections. Practical next steps.","areaServed":{"@type":"AdministrativeArea","name":"Ontario, Canada"}},{"@type":"WebSite","url":"https://liftrightequipment.com/","name":"LiftRight Equipment","publisher":{"@id":"https://liftrightequipment.com/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://liftrightequipment.com/"},{"@type":"ListItem","position":2,"name":"Request a quote","item":"https://liftrightequipment.com/quote/"}]}]}</script>
 </head>
-<body class="page-quote is-preview">
+<body class="page-quote">
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="preview-banner" role="note"><div class="container"><strong>Private review preview</strong> <span>Draft content for owner review. Not approved for publication. Enquiry form runs in demonstration mode and sends nothing.</span></div></div>
-<header class="site-header">
-    <div class="container site-header__inner">
-      <a class="brand" href="/" aria-label="LiftRight Equipment home"><span class="brand__mark" aria-hidden="true"><span>L</span><span>R</span></span>
-  <span class="brand__text"><span class="brand__line1">LIFTRIGHT</span><span class="brand__line2">EQUIPMENT</span></span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars" aria-hidden="true"></span><span class="nav-toggle__label">Menu</span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Main">
-        <ul><li><a href="/services/" >Services</a></li><li><a href="/how-it-works/" >How It Works</a></li><li><a href="/fleet-programs/" >Fleet Programs</a></li><li><a href="/service-area/" >Service Area</a></li><li><a href="/about/" >About</a></li><li><a href="/resources/" >Resources</a></li></ul>
-        <div class="site-nav__actions"><a class="btn btn--primary" href="/quote/" data-cta="header">Request a quote</a></div>
-      </nav>
-    </div>
-  </header>
+<div class="rv-bar" role="note"><div class="container rv-bar__inner"><span><strong>Private review preview.</strong> Draft content, demonstration-mode form.</span><button type="button" class="rv-bar__toggle" id="rv-toggle" aria-pressed="false" title="Chips, notes and image slots are reviewer aids and never appear in the public build.">Hide review marks</button></div></div>
+<header class="site-header"><div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="LiftRight Equipment home"><span class="brand__text"><span class="brand__line1">LIFTRIGHT</span><span class="brand__line2">EQUIPMENT</span></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bars" aria-hidden="true"></span>Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main"><ul><li><a href="/services/" >Services</a></li><li><a href="/how-it-works/" >How It Works</a></li><li><a href="/fleet-programs/" >Fleet Programs</a></li><li><a href="/service-area/" >Service Area</a></li><li><a href="/about/" >About</a></li><li><a href="/resources/" >Resources</a></li></ul><div class="site-nav__actions"><a class="btn btn--primary btn--sm" href="/quote/" data-cta="header">Request a quote</a></div></nav>
+  </div></header>
 <nav class="breadcrumbs container" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Request a quote</li></ol></nav>
 <main id="main" tabindex="-1">
 
-<section class="page-head"><div class="container narrow"><h1>Request an inspection quote</h1><p class="lead">A few details are enough to start. We confirm scope and come back to you with a quote and the next step.</p></div></section>
+<section class="page-head"><div class="container narrow"><h1>Request an inspection quote</h1><p class="lead">A few details are enough to start. We confirm the scope and reply with a quote.</p></div></section>
 <section class="section"><div class="container quote-layout">
   <form class="quote-form" id="quote-form" method="post" action="#" novalidate data-mode="demo" data-endpoint="">
     <p class="demo-note" role="note"><strong>Demonstration mode.</strong> This form sends nothing. It shows validation and the success state for review.</p>
     <div class="form-errors" id="form-errors" role="alert" aria-live="assertive" hidden></div>
-
-    <fieldset class="fs">
-      <legend>About you</legend>
+    <fieldset class="fs"><legend>About you</legend>
       <div class="field"><label for="f-name">Your name <span class="req" aria-hidden="true">*</span></label><input id="f-name" name="name" type="text" autocomplete="name" required aria-required="true"></div>
       <div class="field"><label for="f-company">Company <span class="opt">optional</span></label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
-      <div class="field-row">
-        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email"></div>
-        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
-      </div>
-      <p class="field-hint" id="contact-hint">Give at least one way to reach you. <span class="req" aria-hidden="true">*</span></p>
+      <div class="field-row"><div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email"></div><div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div></div>
+      <p class="field-hint">Give at least one way to reach you. <span class="req" aria-hidden="true">*</span></p>
     </fieldset>
-
-    <fieldset class="fs">
-      <legend>Your equipment</legend>
-      <div class="field">
-        <span class="label" id="equipment-label">Equipment category <span class="req" aria-hidden="true">*</span></span>
-        <div class="choice-grid" role="radiogroup" aria-labelledby="equipment-label" aria-required="true">
-          <label class="choice"><input type="radio" name="equipment" value="forklift" ><span class="choice__box"><svg class="icon" viewBox="0 0 48 48" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 32V16h12v16"/><path d="M4 32h22v6H4z"/><path d="M30 8v30M35 8v30"/><path d="M30 38h16M30 32h12"/><circle cx="10" cy="42" r="3"/><circle cx="22" cy="42" r="3"/></svg><span>Forklifts &amp; lift trucks</span><small>status: draft</small></span></label><label class="choice"><input type="radio" name="equipment" value="aerial" ><span class="choice__box"><svg class="icon" viewBox="0 0 48 48" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 38h32v4H8z"/><circle cx="14" cy="45" r="2"/><circle cx="34" cy="45" r="2"/><path d="M12 38l24-12M36 38L12 26M12 26l24-12M36 26L12 14"/><path d="M6 14h36v-4H6z"/><path d="M9 10V3h30v7"/></svg><span>Scissor, boom lifts &amp; MEWPs</span><small>status: draft</small></span></label><label class="choice"><input type="radio" name="equipment" value="bucket-truck" ><span class="choice__box"><svg class="icon" viewBox="0 0 48 48" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 34V24h10v10"/><path d="M4 34h28v6H4z"/><circle cx="10" cy="43" r="3"/><circle cx="26" cy="43" r="3"/><path d="M18 34v-6h8v6"/><path d="M22 28L34 10l10 4"/><path d="M40 14h8v8h-8z"/></svg><span>Bucket trucks &amp; aerial devices</span><small>status: draft</small></span></label><label class="choice"><input type="radio" name="equipment" value="mobile-crane" ><span class="choice__box"><svg class="icon" viewBox="0 0 48 48" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 34V26h10v8"/><path d="M4 34h32v6H4z"/><circle cx="10" cy="43" r="3"/><circle cx="30" cy="43" r="3"/><path d="M18 34L42 6"/><path d="M42 6v12"/><path d="M39 21a3 3 0 1 0 6 0"/><path d="M12 40v5M28 40v5"/></svg><span>Mobile cranes &amp; boom trucks</span><small>status: draft</small></span></label><label class="choice"><input type="radio" name="equipment" value="mixed" ><span class="choice__box"><svg class="icon" viewBox="0 0 48 48" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 12h4M16 12h24M8 24h4M16 24h24M8 36h4M16 36h24"/></svg><span>Mixed fleet</span><small>several equipment types</small></span></label><label class="choice"><input type="radio" name="equipment" value="not-sure" ><span class="choice__box"><svg class="icon" viewBox="0 0 48 48" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="22" cy="22" r="12"/><path d="M31 31l11 11"/><path d="M16 22h12M22 16v12"/></svg><span>Not sure</span><small>we will advise</small></span></label>
-        </div>
-      </div>
+    <fieldset class="fs"><legend>Your equipment</legend>
+      <div class="field"><span class="label" id="equipment-label">Equipment category <span class="req" aria-hidden="true">*</span></span>
+        <div class="choice-grid" role="radiogroup" aria-labelledby="equipment-label" aria-required="true"><label class="choice"><input type="radio" name="equipment" value="forklift"><span class="choice__box"><span>Forklifts &amp; lift trucks</span><small>status: draft</small></span></label><label class="choice"><input type="radio" name="equipment" value="aerial"><span class="choice__box"><span>Scissor, boom lifts &amp; MEWPs</span><small>status: draft</small></span></label><label class="choice"><input type="radio" name="equipment" value="bucket-truck"><span class="choice__box"><span>Bucket trucks &amp; aerial devices</span><small>status: draft</small></span></label><label class="choice"><input type="radio" name="equipment" value="mobile-crane"><span class="choice__box"><span>Mobile cranes &amp; boom trucks</span><small>status: draft</small></span></label><label class="choice"><input type="radio" name="equipment" value="mixed"><span class="choice__box"><span>Mixed fleet</span><small>several equipment types</small></span></label><label class="choice"><input type="radio" name="equipment" value="not-sure"><span class="choice__box"><span>Not sure</span><small>we will advise</small></span></label></div></div>
       <div class="field"><label for="f-location">Site town or postal code <span class="req" aria-hidden="true">*</span></label><input id="f-location" name="location" type="text" autocomplete="postal-code" required aria-required="true"></div>
       <div class="field-row">
         <div class="field"><label for="f-units">Number of units <span class="opt">optional</span></label><select id="f-units" name="units"><option value="">Select</option><option>1</option><option>2 to 5</option><option>6 to 15</option><option>16 or more</option><option>Not sure</option></select></div>
         <div class="field"><label for="f-work">Work needed <span class="opt">optional</span></label><select id="f-work" name="work"><option value="">Select</option><option value="periodic">Periodic or annual inspection</option><option value="structural">Structural inspection</option><option value="dielectric">Dielectric testing</option><option value="reinspection">Reinspection after corrective work</option><option value="not-sure">Not sure, advise me</option></select></div>
       </div>
-      <div class="field-row">
-        <div class="field"><label for="f-reason">Due date or reason <span class="opt">optional</span></label><input id="f-reason" name="reason" type="text" placeholder="e.g. annual due in March, new site, incident"></div>
-        <div class="field"><label for="f-timing">Desired timing <span class="opt">optional</span></label><select id="f-timing" name="timing"><option value="">Select</option><option>As soon as possible</option><option>Within a month</option><option>Within three months</option><option>Just planning</option></select></div>
-      </div>
-      <div class="field"><label for="f-message">Anything else <span class="opt">optional</span></label><textarea id="f-message" name="message" rows="4" placeholder="Makes, models, serial numbers, attachments, access notes. You can also send these later."></textarea></div>
+      <details class="more" id="more-details"><summary>Add timing and equipment details <span class="opt">Optional. You can also send these later.</span></summary>
+        <div class="field-row"><div class="field"><label for="f-reason">Due date or reason</label><input id="f-reason" name="reason" type="text" placeholder="e.g. annual due in March, new site, incident"></div><div class="field"><label for="f-timing">Desired timing</label><select id="f-timing" name="timing"><option value="">Select</option><option>As soon as possible</option><option>Within a month</option><option>Within three months</option><option>Just planning</option></select></div></div>
+        <div class="field"><label for="f-message">Makes, models, serial numbers, attachments, access notes</label><textarea id="f-message" name="message" rows="4"></textarea></div>
+      </details>
     </fieldset>
-
     <div class="hp" aria-hidden="true"><label for="f-website">Leave this field empty</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
-    <input type="hidden" name="intent" id="f-intent" value="quote">
-    <input type="hidden" name="source_page" id="f-source" value="">
-
-    <div class="form-actions">
-      <button class="btn btn--primary btn--lg" type="submit" id="quote-submit">Request quote</button>
-      <p class="form-fine">We use your details only to respond to this enquiry. <a href="/privacy/">Privacy</a>.</p>
-    </div>
+    <input type="hidden" name="intent" id="f-intent" value="quote"><input type="hidden" name="source_page" id="f-source" value="">
+    <div class="form-actions"><button class="btn btn--primary btn--lg" type="submit" id="quote-submit">Request quote</button><p class="form-fine">We use your details only to respond to this enquiry. <a href="/privacy/">Privacy</a>.</p></div>
   </form>
-
-  <div class="quote-success" id="quote-success" hidden tabindex="-1">
-    <span class="quote-success__icon"><svg class="icon" viewBox="0 0 48 48" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 25l10 10L40 13"/></svg></span>
-    <h2>Your enquiry has been received</h2>
-    <p>Thank you. We have your details and will come back to you using the contact method you chose. If anything about the scope needs clarifying we will ask first.</p>
-    <p>We reply to every enquiry and confirm the next step with you.</p>
-    <div class="quote-success__summary" id="quote-summary"></div>
-    <p><a href="/">Back to home</a></p>
-  </div>
-
-  <aside class="quote-aside">
-    <h2>What happens next</h2>
-    <ol class="numbered"><li><span>We review your equipment and location and confirm eligibility</span></li><li><span>If anything needs clarifying, we contact you using the method you chose</span></li><li><span>You receive a quote with the scope spelled out, and we agree timing and access</span></li></ol>
-    <p>We reply to every enquiry and confirm the next step with you.</p>
-    <div class="quote-aside__fallback"><h3>Prefer to contact us directly?</h3><p><a href="mailto:info@liftrightequipment.com" data-track="email_click">info@liftrightequipment.com</a></p></div>
-    <template id="error-template"><div class="form-error-box"><h2>We could not send your enquiry</h2><p>Your details are still in the form. Please try again, or contact us directly and we will pick it up.</p><p><a href="mailto:info@liftrightequipment.com" data-track="email_click">info@liftrightequipment.com</a></p></div></template>
-  </aside>
+  <div class="quote-success" id="quote-success" hidden tabindex="-1"><h2>Your enquiry has been received</h2><p>Thank you. We have your details and will come back to you using the contact method you chose. If anything about the scope needs clarifying we will ask first.</p><p>We reply to every enquiry and confirm the next step with you.</p><div class="quote-success__summary" id="quote-summary"></div><p><a href="/">Back to home</a></p></div>
+  <aside class="quote-aside"><h2>What happens next</h2><p>We review the equipment and location, confirm eligibility and reply with a quote that sets out the scope. If anything needs clarifying we contact you first, using the method you chose.</p><p>We reply to every enquiry and confirm the next step with you.</p><p class="quote-aside__fallback">Prefer to contact us directly? <a href="mailto:info@liftrightequipment.com" data-track="email_click">info@liftrightequipment.com</a></p>
+    <template id="error-template"><div class="form-error-box"><h2>We could not send your enquiry</h2><p>Your details are still in the form. Please try again, or contact us directly and we will pick it up.</p><p><a href="mailto:info@liftrightequipment.com" data-track="email_click">info@liftrightequipment.com</a></p></div></template></aside>
 </div></section>
-<section class="review-notes container" aria-label="Internal review notes">
-    <details>
-      <summary>Internal review notes <span class="review-notes__hint">preview only, never published</span></summary>
-      <ul><li>Form runs in demonstration mode in preview. Set enquiry.mode to live and provide enquiry.endpoint before activation.</li><li>Assign enquiry.owner, enquiry.backupRecipient and the routing owners per equipment category before activation.</li><li>Success is shown only after a 2xx response with a receipt id in live mode. Test real receipt and acknowledgement before launch.</li><li>Response window is not stated until contact.responseWindow.agreed is true.</li></ul>
-    </details>
-  </section>
+<aside class="rv-notes container" aria-label="Internal review notes"><details><summary>Review notes <span>preview only</span></summary><ul><li>Form runs in demonstration mode in preview. Set enquiry.mode to live and provide enquiry.endpoint before activation.</li><li>Assign enquiry.owner, enquiry.backupRecipient and the routing owners per equipment category before activation.</li><li>Success is shown only after a 2xx response with a receipt id in live mode.</li><li>Response window is not stated until contact.responseWindow.agreed is true.</li></ul></details></aside>
 </main>
-<footer class="site-footer">
-    <div class="container site-footer__grid">
-      <div class="site-footer__brand">
-        <a class="brand brand--footer" href="/" aria-label="LiftRight Equipment home"><span class="brand__mark" aria-hidden="true"><span>L</span><span>R</span></span>
-  <span class="brand__text"><span class="brand__line1">LIFTRIGHT</span><span class="brand__line2">EQUIPMENT</span></span></a>
-        <p class="site-footer__descriptor">Lifting Equipment Inspections</p>
-        <p class="site-footer__tagline">Clear inspections. Practical next steps.</p>
-      </div>
-      <nav aria-label="Services"><h2 class="site-footer__h">Services</h2><ul><li><a href="/services/forklift-inspections/">Forklift and lift truck inspections</a></li><li><a href="/services/aerial-lift-inspections/">Scissor lift, boom lift and MEWP inspections</a></li><li><a href="/services/bucket-truck-inspections/">Bucket truck and vehicle-mounted aerial device inspections</a></li><li><a href="/services/mobile-crane-inspections/">Mobile crane and boom truck inspections</a></li></ul></nav>
-      <nav aria-label="Company"><h2 class="site-footer__h">Company</h2><ul><li><a href="/services/">Services</a></li><li><a href="/how-it-works/">How It Works</a></li><li><a href="/fleet-programs/">Fleet Programs</a></li><li><a href="/service-area/">Service Area</a></li><li><a href="/about/">About</a></li><li><a href="/resources/">Resources</a></li><li><a href="/quote/">Request a quote</a></li><li><a href="/privacy/">Privacy</a></li></ul></nav>
-      <div><h2 class="site-footer__h">Contact</h2><ul class="site-footer__contact"><li><svg class="icon" viewBox="0 0 48 48" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 12h36v26H6z"/><path d="M6 14l18 12 18-12"/></svg> <a href="mailto:info@liftrightequipment.com" data-track="email_click">info@liftrightequipment.com</a><span class="chip chip--draft">Draft · unverified mailbox</span></li><li><svg class="icon" viewBox="0 0 48 48" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M24 44s-14-12-14-24a14 14 0 0 1 28 0c0 12-14 24-14 24z"/><circle cx="24" cy="20" r="5"/></svg> <span>Ontario. On-site inspections, travel quoted by location.</span></li></ul></div>
-    </div>
-    <div class="container site-footer__legal">
-      <p>&copy; 2026 LiftRight Equipment. Ontario, Canada.</p>
-      <p class="site-footer__preview">Private review preview. Build 2026-10-25 19:39.</p>
-    </div>
-  </footer>
+<footer class="site-footer"><div class="container site-footer__grid">
+    <div class="site-footer__brand"><a class="brand brand--footer" href="/" aria-label="LiftRight Equipment home"><span class="brand__text"><span class="brand__line1">LIFTRIGHT</span><span class="brand__line2">EQUIPMENT</span></span></a><p>Lifting Equipment Inspections</p><p class="site-footer__tagline">Clear inspections. Practical next steps.</p></div>
+    <nav aria-label="Services"><h2 class="site-footer__h">Services</h2><ul><li><a href="/services/forklift-inspections/">Forklifts &amp; lift trucks</a></li><li><a href="/services/aerial-lift-inspections/">Scissor, boom lifts &amp; MEWPs</a></li><li><a href="/services/bucket-truck-inspections/">Bucket trucks &amp; aerial devices</a></li><li><a href="/services/mobile-crane-inspections/">Mobile cranes &amp; boom trucks</a></li></ul></nav>
+    <nav aria-label="Company"><h2 class="site-footer__h">Company</h2><ul><li><a href="/services/">Services</a></li><li><a href="/how-it-works/">How It Works</a></li><li><a href="/fleet-programs/">Fleet Programs</a></li><li><a href="/service-area/">Service Area</a></li><li><a href="/about/">About</a></li><li><a href="/resources/">Resources</a></li><li><a href="/quote/">Request a quote</a></li><li><a href="/privacy/">Privacy</a></li></ul></nav>
+    <div><h2 class="site-footer__h">Contact</h2><ul class="site-footer__contact"><li><a href="mailto:info@liftrightequipment.com" data-track="email_click">info@liftrightequipment.com</a> <span class="rv-chip rv-chip--draft">Draft: mailbox unverified</span></li><li>Ontario. On-site inspections, travel quoted by location.</li></ul></div>
+  </div><div class="container site-footer__legal"><p>&copy; 2026 LiftRight Equipment. Ontario, Canada.</p><p class="rv-stamp">Private review preview · build 2026-10-25 20:41</p></div></footer>
 <script src="/assets/main.js" defer></script>
 </body>
 </html>

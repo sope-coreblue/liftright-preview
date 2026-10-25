@@ -26,6 +26,26 @@
     });
   }
 
+  /* ---------- Review layer toggle (preview only) ---------- */
+  var rvToggle = document.getElementById('rv-toggle');
+  if (rvToggle) {
+    var applyRv = function (hidden) {
+      document.body.classList.toggle('rv-hidden', hidden);
+      rvToggle.setAttribute('aria-pressed', String(hidden));
+      rvToggle.textContent = hidden ? 'Show review marks' : 'Hide review marks';
+    };
+    try { applyRv(sessionStorage.getItem('lr-rv-hidden') === '1'); } catch (e) { /* ignore */ }
+    rvToggle.addEventListener('click', function () {
+      var hidden = !document.body.classList.contains('rv-hidden');
+      applyRv(hidden);
+      try { sessionStorage.setItem('lr-rv-hidden', hidden ? '1' : '0'); } catch (e) { /* ignore */ }
+    });
+  }
+
+  /* ---------- "On this page" collapses on phones ---------- */
+  var toc = document.querySelector('details.toc');
+  if (toc && window.matchMedia && window.matchMedia('(max-width: 959px)').matches) toc.open = false;
+
   /* ---------- Quote form ---------- */
   var form = document.getElementById('quote-form');
   if (!form) return;
@@ -43,11 +63,13 @@
   var params = new URLSearchParams(location.search);
   var pre = params.get('equipment');
   if (pre) { var r = form.querySelector('input[name="equipment"][value="' + pre.replace(/"/g, '') + '"]'); if (r) r.checked = true; }
+  var more = document.getElementById('more-details');
   var preWork = params.get('work');
   if (preWork) { var w = form.querySelector('#f-work'); if (w) { w.value = preWork; } }
   var intent = params.get('intent');
   var intentField = document.getElementById('f-intent');
   if (intent && intentField) intentField.value = intent;
+  if (more && ['reason', 'timing', 'message'].some(function (k) { return form.elements[k] && form.elements[k].value; })) more.open = true;
   if (intent === 'fleet') {
     var h1 = document.querySelector('h1');
     if (h1) h1.textContent = 'Discuss your fleet';
