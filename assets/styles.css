@@ -328,3 +328,6 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { border-color
 .site-footer__contact .rv-chip { color: #fff; border-color: rgba(255,255,255,.6); background: rgba(255,255,255,.08); }
 .site-footer__legal { margin-top: var(--s6); padding-top: var(--s4); border-top: 1px solid rgba(255,255,255,.14); font-size: .8125rem; color: rgba(255,255,255,.65); display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s2); }
 @media print { .site-header, .rv-bar, .closing, .site-footer, .rv-notes, .nav-toggle { display: none !important; } body { font-size: 11pt; } }
+
+.area-line { margin-top: var(--s4); color: var(--ink-700); max-width: 62ch; }
+.regions { margin-bottom: var(--s4); }
